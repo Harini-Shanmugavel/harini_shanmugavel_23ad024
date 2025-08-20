@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StudyNest | Project Details</title>
+  <link rel="stylesheet" href="styles.css" />
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">HS</span> <span class="brand-text">Harini Shanmugavel</span>
+      </a>
+      <nav>
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html" aria-current="page">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <style>
+    /* Wikipedia-style layout */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #290534; /* match project page bg */
+    }
+    header, footer {
+      background-color: #30449480;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+    .container {
+      display: flex;
+      padding: 20px;
+    }
+    /* Sidebar */
+    .sidebar {
+      width: 250px;
+      background-color: #fff;
+      border-right: 1px solid #ccc;
+      padding: 15px;
+      height: calc(100vh - 120px); /* full height minus header/footer */
+      overflow-y: auto;
+      position: sticky;
+      top: 0;
+    }
+    .sidebar h3 {
+      font-size: 1.1em;
+      margin-top: 0;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+    }
+    .sidebar a {
+      display: block;
+      padding: 6px 0;
+      color: #0645ad;
+      text-decoration: none;
+      font-size: 0.95em;
+    }
+    .sidebar a:hover {
+      text-decoration: underline;
+    }
+    /* Main content */
+    .content {
+      flex: 1;
+      background-color: #fff;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    .content h2 {
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+      margin-top: 30px;
+    }
+    .references ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .references li {
+      margin-bottom: 5px;
+      font-size: 0.95em;
+    }
+    .references a {
+      color: #0645ad;
+      text-decoration: none;
+    }
+    .references a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>StudyNest</h1>
+    <p>Project Details</p>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <div class="container">
+    <!-- Sidebar -->
+    <nav class="sidebar">
+  <h3>Contents</h3>
+  <>
+    <li><a href="#overview">Overview</a></li>
+    <li><a href="#Survey">Survey</a></li>
+    <li>
+      <a href="#features">Software Features</a>
+      <ul>
+        <li><a href="#Home Page">Home Page</a></li>
+        <li><a href="#Video Search Page">Video Search Page</a></li>
+        <li><a href="#Flashcard Page">Flashcard Page</a></li>
+        <li><a href="#Grade Analysis Page">Grade Analysis Page</a></li>
+        <li><a href="#Motivation Page">Motivation Page</a></li>
+      </ul>
+    </li>
+
+    <li><a href="#Aapplications">Applications</a></li>
+    <li><a href="#Future- Scope">Future Scope</a></li>
+  
+</nav>
+
+    <!-- Main -->
+    <div class="content">
+      <section id="overview">
+        <h2>Overview</h2>
+        <p>StudyNest is a smart study companion that blends planning, learning, motivation, and performance tracking into a single platform. Designed for students, self-learners, and educators, it integrates advanced features like AI-generated questions, grade analysis, and motivational tools. With an intuitive interface and interactive tools, StudyNest ensures learning stays engaging, personalized, and productive.</p>
+     
+        <section id="Survey">
+        <h2>Survey</h2>   
+        <img src="image/survey.png" style=" style="max-width: 60%; height: 50; margin-top: 5px;">
+      </section>
+
+      <section id="Home Page">
+        <h2>Home Page</h2>
+  <li>Interactive calendar built with JavaScript</li>
+  <li>Task management using Django database and Task model (date, title, status).</li>
+  <li>Dynamic add/remove tasks via Django forms.</li>
+  <li>Fun CSS celebration animations for completed tasks</li>
+        </ul>
+         <img src="image/sn1.png" style=" style="max-width: 60%; height: 50; margin-top: 5px;">
+      </section>
+
+      <section id="Video Search Page">
+        <h2>Video Search Page</h2>
+        <ol>
+          <li>YouTube Data API integration to fetch videos based on search keywords.</li>
+          <li>NLP-based tag matching for better search relevance.</li>
+          <li>Results displayed in a responsive Bootstrap grid.</li>
+          <li>Dynamic video playback with JavaScript.</li>
+         
+            <img src="image/video.png" style=" style="max-width: 60%; height: 50; margin-top: 5px;"> 
+          
+        </ol>
+      </section>
+
+      <section id="Flashcard Page">
+        <h2>Flashcard Page</h2>    
+  
+        <ul>
+          <li>PDF upload using Django file handling.</li>
+
+<li>Gemini API to extract text and auto-generate questions.</li>
+
+<li>Temporary storage of questions in Django models.</li>
+
+<li>Interactive flashcards built with JavaScript.</li>
+
+<li>Progress tracking via local storage or database.</li>
+        </ul>
+         <img src="image/flash.png" style=" style="max-width: 60%; height: 50; margin-top: 5px;">
+      </section>
+
+      <section id="Grade Analysis page">
+        <h2>Grade Analysis page</h2> 
+        <ul>
+          <li>Django Grade model (subject, date, score).</li>
+
+<li>Chart.js integration to visualize grade trends.</li>
+
+<li>Dynamic statistics using Django views.</li>
+
+<li>Progress bars showing performance improvements.</li>
+        </ul>
+         <img src="image/grade.png" style=" style="max-width: 60%; height: 50; margin-top: 5px;">
+      </section>
+
+      <section id="Motivation Page">
+        <h2>Motivation Page</h2>
+        <ol>
+          <li>YouTube Data API to fetch motivational videos.</li>
+
+ <li>Bootstrap carousel to display content.</li>
+
+ <li>Animated text and CSS confetti effects for encouragement.</li>
+        </ol>
+         <img src="image/motive.png" style=" style="max-width: 60%; height: 50; margin-top: 5px;">
+      </section>
+
+      <section id="Applications">
+        <h2>Applications</h2>
+        <ul>
+          <li>Students managing multiple subjects and deadlines.</li>
+
+ <li>Self-learners tracking learning progress.</li>
+
+ <li>Educators organizing resources for students.</li>
+
+ <li>Learners seeking AI-assisted study help.</li>
+
+ <li>Motivational support for long-term learning goals.</li>
+        </ul>
+      </section>
+
+      <section id="Future Scope">
+        <h2>Future Scope</h2>
+        <ul>
+          <li>Personalized AI Learning Assistant for custom study paths.</li>
+
+<li>Gamification & Rewards to boost engagement.</li>
+
+<li>Collaboration & Peer Learning features.</li>
+
+<li>AI-generated study notes and summaries.</li>
+
+<li>Adaptive quizzes with performance insights.</li>
+      </section>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Harini Shanmugavel | Portfolio</p>
+  </footer>
+
+</body>
+</html>

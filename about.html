@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Harini Shanmugavel | Portfolio</title>
+
+  <!-- EXTERNAL CSS (Type 1) -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- INTERNAL CSS (Type 2) -->
+  <style>
+    /* Small page-specific tweaks kept here to demonstrate internal CSS */
+    .tagline strong {
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+    /* Extra hover flourish just for Home link, distinct from external styles */
+    nav a[aria-current="page"] {
+      font-weight: 700;
+      letter-spacing: 0.3px;
+    }
+    /* Responsive nudge for very small devices */
+    @media (max-width: 380px) {
+      .intro { padding: 1rem; }
+      .name { font-size: 1.6rem; }
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER with constant / sticky navigation -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="Go to Home">
+        <span class="brand-mark">HS</span> <span class="brand-text">Harini Shanmugavel</span>
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+<div style="display: flex; gap: 20px;">
+
+    <!-- Scroll Index -->
+    <nav style="width: 200px; background-color: #f4f4f4; padding: 15px; border-radius: 10px; position: sticky; top: 20px; height: fit-content;">
+        <h3 style="font-size: 18px; margin-bottom: 10px;">About Me</h3>
+        <ul style="list-style: none; padding: 0;">
+            <li><a href="#personal-bg" style="text-decoration: none; color: #2c3e50;">Personal Background</a></li>
+            <li><a href="#education" style="text-decoration: none; color: #2c3e50;">Education</a></li>
+            <li><a href="#skills" style="text-decoration: none; color: #2c3e50;">Skills</a></li>
+            <li><a href="#interests" style="text-decoration: none; color: #2c3e50;">Interests</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div style="flex: 1;">
+
+        <!-- Personal Background -->
+        <section id="personal-bg" style="background-color: white; padding: 20px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin-bottom: 20px;">
+            <h2>Personal Background</h2>
+            <p>I am Harini Shanmugavel, a passionate and dedicated student at KPR Institute of Engineering and Technology (KPRIET), Coimbatore. I am part of the Batch of 2027 and currently pursuing my B.Tech degree with a specialization in Artificial Intelligence and Data Science.
+
+I hail from Tirupur, Tamil Nadu, and live with my loving family of four. Growing up in a supportive environment has helped me nurture qualities like curiosity, perseverance, and adaptability.
+
+From a young age, I have been fascinated by technology, problem-solving, and innovative thinking. This passion has shaped my academic choices and driven me to explore new fields in AI, data analysis, and sustainable tech solutions.
+
+Apart from academics, I actively engage in hackathons, technical workshops, and creative projects, constantly seeking opportunities to learn and grow.
+
+            </p>
+        </section>
+
+        <!-- Education -->
+        <section id="education" style="background-color: white; padding: 20px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin-bottom: 20px;">
+            <h2>Education</h2>
+            <p>
+              <h3> Frontline Millennium CBSE School – India</h3>
+                  <p>Senior Secondary Education (CBSE)</p>
+<p>Apr 2018 – Mar 2023</p>
+
+<p>Successfully completed CBSE curriculum with a focus on Computer Science and Mathematics.
+
+Participated in cultural events, and leadership activities.</p>
+
+<h4>KPR Institute of Engineering and Technology – India</h4>
+<p>Bachelor of Technology (B.Tech) in Artificial Intelligence and Data Science</p>
+<p>2023 – Present</p>
+
+<p>Pursuing coursework in AI, Machine Learning, Data Science, and related emerging technologies.
+
+Actively engaged in projects and hackathons to apply theoretical knowledge to real-world problems.
+            </p>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" style="background-color: white; padding: 20px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin-bottom: 20px;">
+            <div class="skill-box">
+    <h3>Skills</h3>
+    <ul>
+        <li>SQL – Database management, queries, and optimization</li>
+        <li>Python – Data analysis, scripting, and automation</li>
+        <li>Web Development – HTML5, CSS3, JavaScript</li>
+        <li>Machine Learning – Model building and evaluation</li>
+        <li>Data Visualization – Power BI, Tableau</li>
+        <li>Problem-Solving – Logical thinking and debugging</li>
+        <li>Version Control – Git & GitHub</li>
+        <li>Communication – Clear articulation of ideas and teamwork</li>
+        <li>Adaptability – Quick learner with ability to handle new technologies</li>
+    </ul>
+</div>
+
+        </section>
+
+        <!-- Interests -->
+        <section id="interests" style="background-color: white; padding: 20px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin-bottom: 20px;">
+            <div class="interest-box">
+    <h3>Interests</h3>
+    <ul>
+        <li>Video Editing – Creating engaging and creative content using tools like CapCut, Premiere Pro, and Canva</li>
+        <li>Freelancing – Provided digital services including editing, designing, and content creation</li>
+        <li>Photography – Capturing moments and experimenting with creative compositions</li>
+        <li>Blog Writing – Sharing thoughts and ideas on technology and lifestyle</li>
+        <li>UI/UX Design – Designing user-friendly and visually appealing interfaces</li>
+        <li>Exploring AI Tools – Experimenting with emerging AI-powered applications</li>
+        <li>Learning New Skills – Staying updated with the latest tech trends</li>
+        <li>Travel & Culture – Exploring new places and understanding diverse cultures</li>
+    </ul>
+</div>
+
+        </section>
+
+    </div>
+</div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <small>&copy; <span id="year">2025</span> Harini Shanmugavel. All rights reserved.</small>
+      <nav aria-label="Footer">
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

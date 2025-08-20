@@ -1,0 +1,261 @@
+/* ============== Base + Reset ============== */
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial, sans-serif;
+  color: #0e1116;
+  background: #334153;
+}
+
+img { max-width: 100%; display: block; }
+
+/* Container */
+.container {
+  width: min(1100px, 92vw);
+  margin-inline: auto;
+}
+
+/* ============== Header / Nav ============== */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  backdrop-filter: blur(8px);
+  background: linear-gradient(to bottom, rgba(15,16,20,0.85), rgba(15,16,20,0.35));
+  border-bottom: 1px solid rgba(255,255,255,0.12);
+}
+
+.nav-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.9rem 0.4rem;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+
+.brand-mark {
+  display: grid;
+  place-items: center;
+  width: 36px; height: 36px;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #0b0f14;
+  font-weight: 800;
+}
+
+.brand-text {
+  color: #eaf2ff;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+  gap: clamp(0.6rem, 2vw, 1.2rem);
+  margin: 0; padding: 0;
+}
+
+nav a {
+  color: #eaf2ff;
+  text-decoration: none;
+  padding: 0.5rem 0.6rem;
+  border-radius: 10px;
+  transition: transform 180ms ease, background 180ms ease, color 180ms ease;
+}
+
+nav a:hover,
+nav a:focus-visible {
+  background: rgba(255,255,255,0.14);
+  transform: translateY(-1px);
+}
+
+/* ============== Hero Section ============== */
+.hero {
+  position: relative;
+  min-height: 100dvh;
+  display: grid;
+  place-items: center;
+  /* Background image for the page */
+  background-image:
+    linear-gradient(rgba(6,10,16,0.6), rgba(6,10,16,0.7)),
+    url("image/lilac\ bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.overlay {
+  position: absolute; inset: 0;
+  background: radial-gradient(80% 60% at 50% 40%, rgba(255,255,255,0.06), transparent 60%);
+  pointer-events: none;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: #f6f7fb;
+  padding: 6rem 1rem;
+}
+
+.profile-photo {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 auto 1.4rem auto;
+  border: 3px solid rgba(255,255,255,0.85);
+}
+
+.name {
+  font-size: clamp(1.8rem, 3.2vw, 2.4rem);
+  margin: 0.2rem 0 0.3rem 0;
+}
+
+.highlight {
+  background: linear-gradient(90deg, #b3e2ff, #e5d1ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.tagline {
+  margin: 0.2rem 0 0.8rem;
+  color: #dbe7ff;
+  opacity: 0.95;
+}
+
+.summary {
+  margin: 0 auto 0.8rem;
+  max-width: 700px;
+  line-height: 1.6;
+  color: #e9eefb;
+  opacity: 0.95;
+}
+
+.quick-highlights {
+  margin: 0.8rem auto 1.4rem;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.4rem;
+}
+.quick-highlights li {
+  display: inline-block;
+  margin: 0.12rem 0.3rem;
+  padding: 0.38rem 0.6rem;
+  border: 1px solid rgba(255,255,255,0.25);
+  border-radius: 999px;
+  font-size: 0.95rem;
+  color: #f5f8ff;
+  backdrop-filter: blur(4px);
+}
+
+/* CTA Buttons with hover effects */
+.btn {
+  display: inline-block;
+  padding: 0.7rem 1rem;
+  border-radius: 12px;
+  text-decoration: none;
+  border: 1px solid rgba(255,255,255,0.32);
+  transition: transform 180ms ease, background 180ms ease, color 180ms ease, border-color 180ms ease;
+  margin: 0.2rem 0.35rem;
+}
+.btn.primary {
+  background: rgba(255,255,255,0.96);
+  color: #0b0f14;
+  font-weight: 700;
+}
+.btn.ghost {
+  background: transparent;
+  color: #ffffff;
+}
+.btn:hover,
+.btn:focus-visible {
+  transform: translateY(-2px);
+}
+.btn.primary:hover,
+.btn.primary:focus-visible {
+  background: #ffffff;
+  border-color: #ffffff;
+}
+.btn.ghost:hover,
+.btn.ghost:focus-visible {
+  background: rgba(255,255,255,0.18);
+  border-color: rgba(255,255,255,0.55);
+}
+
+/* ============== Footer ============== */
+.site-footer {
+  background: #0e141b;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  color: #d7e2f2;
+}
+.footer-grid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 0.4rem;
+}
+.site-footer a {
+  color: #d7e2f2;
+  text-decoration: none;
+  margin-left: 0.8rem;
+  border-radius: 8px;
+  padding: 0.2rem 0.4rem;
+}
+.site-footer a:hover,
+.site-footer a:focus-visible {
+  background: rgba(255,255,255,0.12);
+}
+
+/* ============== Misc. Accessibility ============== */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px dashed #cfe6ff;
+  outline-offset: 3px;
+}
+/* Projects Page Layout */
+.projects-section {
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.projects-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.projects-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background: white;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+}
